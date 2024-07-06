@@ -1,10 +1,9 @@
 #pragma once
 
 #include <vector>
-
 #include "__base__.hpp"
 
-typedef enum
+typedef enum 
 {
     BUTTON_IDLE = 0,
     BUTTON_MENU,
@@ -13,11 +12,10 @@ typedef enum
     BUTTON_DOWN
 } button_name_t;
 
-typedef struct
+typedef struct 
 {
-    button_name_t key; /**< button index on the channel */
-    int min;           /**< min voltage in mv corresponding to the button */
-    int max;           /**< max voltage in mv corresponding to the button */
+    button_name_t key;  /**< button index */
+    gpio_num_t pin;     /**< pin on hardware */
 } key_config_t;
 
 class AppButton : public Subject

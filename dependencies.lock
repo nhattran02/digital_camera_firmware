@@ -34,6 +34,11 @@ dependencies:
     source:
       type: service
     version: 1.2.0
+  espressif/esp_lcd_ili9341:
+    component_hash: c6b96c14fa22ab9b80251812f7dbd7dd1b255ccd68abb0cef97a276df711a4ec
+    source:
+      type: service
+    version: 2.0.0
   espressif/mdns:
     component_hash: 9ff9c578fc3a5ea3c68e807233e47f2ce6b2492a92d7a9356ae5c29ab45f0fde
     source:
@@ -45,6 +50,6 @@ dependencies:
     source:
       type: idf
     version: 5.1.4
-manifest_hash: 19ed8e7d42f1ce8d4102955d45a0701e581ceb0c49f4d471c69b0e44b703d088
+manifest_hash: 47c6757bd85c0a4c3b0b87add2c45e5ac4158a48ff4b34b13f472c3e57329ad0
 target: esp32s3
 version: 1.0.0

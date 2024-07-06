@@ -31613,465 +31613,6 @@
                     {
                         "children": [],
                         "depends_on": null,
-                        "help": "Enable this option to support codec ES8311.",
-                        "id": "CODEC_ES8311_SUPPORT",
-                        "name": "CODEC_ES8311_SUPPORT",
-                        "range": null,
-                        "title": "Support ES8311 Codec Chip",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Enable this option to support codec ES7210.",
-                        "id": "CODEC_ES7210_SUPPORT",
-                        "name": "CODEC_ES7210_SUPPORT",
-                        "range": null,
-                        "title": "Support ES7210 Codec Chip",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Enable this option to support codec ES7243.",
-                        "id": "CODEC_ES7243_SUPPORT",
-                        "name": "CODEC_ES7243_SUPPORT",
-                        "range": null,
-                        "title": "Support ES7243 Codec Chip",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Enable this option to support codec ES7243E.",
-                        "id": "CODEC_ES7243E_SUPPORT",
-                        "name": "CODEC_ES7243E_SUPPORT",
-                        "range": null,
-                        "title": "Support ES7243E Codec Chip",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Enable this option to support codec ES8156.",
-                        "id": "CODEC_ES8156_SUPPORT",
-                        "name": "CODEC_ES8156_SUPPORT",
-                        "range": null,
-                        "title": "Support ES8156 Codec Chip",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Enable this option to support codec AW88298.",
-                        "id": "CODEC_AW88298_SUPPORT",
-                        "name": "CODEC_AW88298_SUPPORT",
-                        "range": null,
-                        "title": "Support AW88298 Codec Chip",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Enable this option to support codec ES8374.",
-                        "id": "CODEC_ES8374_SUPPORT",
-                        "name": "CODEC_ES8374_SUPPORT",
-                        "range": null,
-                        "title": "Support ES8374 Codec Chip",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Enable this option to support codec ES8388.",
-                        "id": "CODEC_ES8388_SUPPORT",
-                        "name": "CODEC_ES8388_SUPPORT",
-                        "range": null,
-                        "title": "Support ES8388 Codec Chip",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Enable this option to support codec TAS5805M.",
-                        "id": "CODEC_TAS5805M_SUPPORT",
-                        "name": "CODEC_TAS5805M_SUPPORT",
-                        "range": null,
-                        "title": "Support TAS5805M Codec Chip",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Enable this option to support codec ZL38063.\nZL38063 firmware only support xtensa, don't enable for RISC-V IC.",
-                        "id": "CODEC_ZL38063_SUPPORT",
-                        "name": "CODEC_ZL38063_SUPPORT",
-                        "range": null,
-                        "title": "Support ZL38063 Codec Chip",
-                        "type": "bool"
-                    }
-                ],
-                "depends_on": null,
-                "id": "component-config-audio-codec-device-configuration",
-                "title": "Audio Codec Device Configuration",
-                "type": "menu"
-            },
-            {
-                "children": [
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": "CU_RELINKER_ENABLE",
-                                "help": "\"Enable this option to print error information instead of\n    throwing exception when missing function\"",
-                                "id": "CU_RELINKER_ENABLE_PRINT_ERROR_INFO_WHEN_MISSING_FUNCTION",
-                                "name": "CU_RELINKER_ENABLE_PRINT_ERROR_INFO_WHEN_MISSING_FUNCTION",
-                                "range": null,
-                                "title": "Print error information when missing function",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "CU_RELINKER_ENABLE_CUSTOMIZED_CONFIGURATION_FILES && CU_RELINKER_ENABLE",
-                                        "help": "\"Customized relinker configuration files path. This path is\nevaluated relative to the project root directory.\"",
-                                        "id": "CU_RELINKER_CUSTOMIZED_CONFIGURATION_FILES_PATH",
-                                        "name": "CU_RELINKER_CUSTOMIZED_CONFIGURATION_FILES_PATH",
-                                        "range": null,
-                                        "title": "Customized relinker configuration files path",
-                                        "type": "string"
-                                    }
-                                ],
-                                "depends_on": "CU_RELINKER_ENABLE",
-                                "help": "\"Enable this option to use customized relinker configuration\nfiles instead of default ones\"",
-                                "id": "CU_RELINKER_ENABLE_CUSTOMIZED_CONFIGURATION_FILES",
-                                "name": "CU_RELINKER_ENABLE_CUSTOMIZED_CONFIGURATION_FILES",
-                                "range": null,
-                                "title": "Enable customized relinker configuration files",
-                                "type": "bool"
-                            }
-                        ],
-                        "depends_on": null,
-                        "help": "\"Enable relinker to linker some IRAM functions to Flash\"",
-                        "id": "CU_RELINKER_ENABLE",
-                        "name": "CU_RELINKER_ENABLE",
-                        "range": null,
-                        "title": "Enable relinker",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": "<choice CU_DIAGNOSTICS_COLOR>",
-                                "help": null,
-                                "id": "CU_DIAGNOSTICS_COLOR_NEVER",
-                                "name": "CU_DIAGNOSTICS_COLOR_NEVER",
-                                "range": null,
-                                "title": "never",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "<choice CU_DIAGNOSTICS_COLOR>",
-                                "help": null,
-                                "id": "CU_DIAGNOSTICS_COLOR_ALWAYS",
-                                "name": "CU_DIAGNOSTICS_COLOR_ALWAYS",
-                                "range": null,
-                                "title": "always",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "<choice CU_DIAGNOSTICS_COLOR>",
-                                "help": null,
-                                "id": "CU_DIAGNOSTICS_COLOR_AUTO",
-                                "name": "CU_DIAGNOSTICS_COLOR_AUTO",
-                                "range": null,
-                                "title": "auto",
-                                "type": "bool"
-                            }
-                        ],
-                        "depends_on": null,
-                        "help": "Use color in diagnostics. \"never\", \"always\", or \"auto\". If \"always\", GCC will output\nwith color defined in GCC_COLORS environment variable. If \"never\", only output plain\ntext. If \"auto\", only output with color when the standard error is a terminal and when\nnot executing in an emacs shell.",
-                        "id": "component-config-cmake-utilities-color-in-diagnostics",
-                        "name": "CU_DIAGNOSTICS_COLOR",
-                        "title": "Color in diagnostics",
-                        "type": "choice"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "\"Enable this option, users can enable GCC link time optimization(LTO)\n feature for target components or dependencies.",
-                        "id": "CU_GCC_LTO_ENABLE",
-                        "name": "CU_GCC_LTO_ENABLE",
-                        "range": null,
-                        "title": "Enable GCC link time optimization(LTO)",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "\"Enable this option, user can make string in designated components align\n by 1-byte instead 1-word(4-byte), this can reduce unnecessary filled data\n so that to reduce firmware size.\"",
-                        "id": "CU_GCC_STRING_1BYTE_ALIGN",
-                        "name": "CU_GCC_STRING_1BYTE_ALIGN",
-                        "range": null,
-                        "title": "GCC string 1-byte align",
-                        "type": "bool"
-                    }
-                ],
-                "depends_on": null,
-                "id": "component-config-cmake-utilities",
-                "title": "CMake Utilities",
-                "type": "menu"
-            },
-            {
-                "children": [
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Number of network interfaces to be served by the mDNS library.\nLowering this number helps to reduce some static RAM usage.",
-                        "id": "MDNS_MAX_INTERFACES",
-                        "name": "MDNS_MAX_INTERFACES",
-                        "range": [
-                            1,
-                            9
-                        ],
-                        "title": "Max number of interfaces",
-                        "type": "int"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Services take up a certain amount of memory, and allowing fewer\nservices to be open at the same time conserves memory. Specify\nthe maximum amount of services here.",
-                        "id": "MDNS_MAX_SERVICES",
-                        "name": "MDNS_MAX_SERVICES",
-                        "range": null,
-                        "title": "Max number of services",
-                        "type": "int"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Allows setting mDNS task priority. Please do not set the task priority\nhigher than priorities of system tasks. Compile time warning/error\nwould be emitted if the chosen task priority were too high.",
-                        "id": "MDNS_TASK_PRIORITY",
-                        "name": "MDNS_TASK_PRIORITY",
-                        "range": [
-                            1,
-                            255
-                        ],
-                        "title": "mDNS task priority",
-                        "type": "int"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Allows setting the length of mDNS action queue.",
-                        "id": "MDNS_ACTION_QUEUE_LEN",
-                        "name": "MDNS_ACTION_QUEUE_LEN",
-                        "range": [
-                            8,
-                            64
-                        ],
-                        "title": "Maximum actions pending to the server",
-                        "type": "int"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Allows setting mDNS task stacksize.",
-                        "id": "MDNS_TASK_STACK_SIZE",
-                        "name": "MDNS_TASK_STACK_SIZE",
-                        "range": null,
-                        "title": "mDNS task stack size",
-                        "type": "int"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": "<choice MDNS_TASK_AFFINITY>",
-                                "help": null,
-                                "id": "MDNS_TASK_AFFINITY_NO_AFFINITY",
-                                "name": "MDNS_TASK_AFFINITY_NO_AFFINITY",
-                                "range": null,
-                                "title": "No affinity",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "<choice MDNS_TASK_AFFINITY>",
-                                "help": null,
-                                "id": "MDNS_TASK_AFFINITY_CPU0",
-                                "name": "MDNS_TASK_AFFINITY_CPU0",
-                                "range": null,
-                                "title": "CPU0",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "!FREERTOS_UNICORE && <choice MDNS_TASK_AFFINITY>",
-                                "help": null,
-                                "id": "MDNS_TASK_AFFINITY_CPU1",
-                                "name": "MDNS_TASK_AFFINITY_CPU1",
-                                "range": null,
-                                "title": "CPU1",
-                                "type": "bool"
-                            }
-                        ],
-                        "depends_on": null,
-                        "help": "Allows setting mDNS tasks affinity, i.e. whether the task is pinned to\nCPU0, pinned to CPU1, or allowed to run on any CPU.",
-                        "id": "component-config-mdns-mdns-task-affinity",
-                        "name": "MDNS_TASK_AFFINITY",
-                        "title": "mDNS task affinity",
-                        "type": "choice"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": null,
-                        "id": "MDNS_TASK_AFFINITY",
-                        "name": "MDNS_TASK_AFFINITY",
-                        "range": null,
-                        "title": null,
-                        "type": "hex"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Configures timeout for adding a new mDNS service. Adding a service\nfails if could not be completed within this time.",
-                        "id": "MDNS_SERVICE_ADD_TIMEOUT_MS",
-                        "name": "MDNS_SERVICE_ADD_TIMEOUT_MS",
-                        "range": [
-                            10,
-                            30000
-                        ],
-                        "title": "mDNS adding service timeout (ms)",
-                        "type": "int"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Configures period of mDNS timer, which periodically transmits packets\nand schedules mDNS searches.",
-                        "id": "MDNS_TIMER_PERIOD_MS",
-                        "name": "MDNS_TIMER_PERIOD_MS",
-                        "range": [
-                            10,
-                            10000
-                        ],
-                        "title": "mDNS timer period (ms)",
-                        "type": "int"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Enables optional mDNS networking implementation using BSD sockets\nin UDP multicast mode.\nThis option creates a new thread to serve receiving packets (TODO).\nThis option uses additional N sockets, where N is number of interfaces.",
-                        "id": "MDNS_NETWORKING_SOCKET",
-                        "name": "MDNS_NETWORKING_SOCKET",
-                        "range": null,
-                        "title": "Use BSD sockets for mDNS networking",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Enable only if the querier and the responder share the same IP address.\nThis usually happens in test mode, where we may run multiple instances of\nresponders/queriers on the same interface.",
-                        "id": "MDNS_SKIP_SUPPRESSING_OWN_QUERIES",
-                        "name": "MDNS_SKIP_SUPPRESSING_OWN_QUERIES",
-                        "range": null,
-                        "title": "Skip suppressing our own packets",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Enable for the library to log received and sent mDNS packets to stdout.",
-                        "id": "MDNS_ENABLE_DEBUG_PRINTS",
-                        "name": "MDNS_ENABLE_DEBUG_PRINTS",
-                        "range": null,
-                        "title": "Enable debug prints of mDNS packets",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Enable for the console cli to be available on the device.",
-                        "id": "MDNS_ENABLE_CONSOLE_CLI",
-                        "name": "MDNS_ENABLE_CONSOLE_CLI",
-                        "range": null,
-                        "title": "Enable Command Line Interface on device console",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Enables support for IPv4 reverse lookup. If enabled, the mDNS library\nresponse to PTR queries of \"A.B.C.D.in-addr.arpa\" type.",
-                        "id": "MDNS_RESPOND_REVERSE_QUERIES",
-                        "name": "MDNS_RESPOND_REVERSE_QUERIES",
-                        "range": null,
-                        "title": "Enable responding to IPv4 reverse queries",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Enables adding multiple service instances under the same service type.",
-                        "id": "MDNS_MULTIPLE_INSTANCE",
-                        "name": "MDNS_MULTIPLE_INSTANCE",
-                        "range": null,
-                        "title": "Multiple instances under the same service type",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "Set up mDNS for the default WiFi station.\nDisable this option if you do not need mDNS on default WiFi STA.",
-                                "id": "MDNS_PREDEF_NETIF_STA",
-                                "name": "MDNS_PREDEF_NETIF_STA",
-                                "range": null,
-                                "title": "Use predefined interface for WiFi Station",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "Set up mDNS for the default WiFi Access Point.\nDisable this option if you do not need mDNS on default WiFi AP.",
-                                "id": "MDNS_PREDEF_NETIF_AP",
-                                "name": "MDNS_PREDEF_NETIF_AP",
-                                "range": null,
-                                "title": "Use predefined interface for WiFi Access Point",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "ETH_ENABLED",
-                                "help": "Set up mDNS for the default Ethernet interface.\nDisable this option if you do not need mDNS on default Ethernet.",
-                                "id": "MDNS_PREDEF_NETIF_ETH",
-                                "name": "MDNS_PREDEF_NETIF_ETH",
-                                "range": null,
-                                "title": "Use predefined interface for Ethernet",
-                                "type": "bool"
-                            }
-                        ],
-                        "depends_on": null,
-                        "id": "component-config-mdns-mdns-predefined-interfaces",
-                        "title": "MDNS Predefined interfaces",
-                        "type": "menu"
-                    }
-                ],
-                "depends_on": null,
-                "id": "component-config-mdns",
-                "title": "mDNS",
-                "type": "menu"
-            },
-            {
-                "children": [
-                    {
-                        "children": [],
-                        "depends_on": null,
                         "help": "\"Button scan interval\"",
                         "id": "BUTTON_PERIOD_TIME_MS",
                         "name": "BUTTON_PERIOD_TIME_MS",
@@ -32197,6 +31738,577 @@
                 "depends_on": null,
                 "id": "component-config-iot-button",
                 "title": "IoT Button",
+                "type": "menu"
+            },
+            {
+                "children": [
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": "CU_RELINKER_ENABLE",
+                                "help": "\"Enable this option to print error information instead of\n    throwing exception when missing function\"",
+                                "id": "CU_RELINKER_ENABLE_PRINT_ERROR_INFO_WHEN_MISSING_FUNCTION",
+                                "name": "CU_RELINKER_ENABLE_PRINT_ERROR_INFO_WHEN_MISSING_FUNCTION",
+                                "range": null,
+                                "title": "Print error information when missing function",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "CU_RELINKER_ENABLE_CUSTOMIZED_CONFIGURATION_FILES && CU_RELINKER_ENABLE",
+                                        "help": "\"Customized relinker configuration files path. This path is\nevaluated relative to the project root directory.\"",
+                                        "id": "CU_RELINKER_CUSTOMIZED_CONFIGURATION_FILES_PATH",
+                                        "name": "CU_RELINKER_CUSTOMIZED_CONFIGURATION_FILES_PATH",
+                                        "range": null,
+                                        "title": "Customized relinker configuration files path",
+                                        "type": "string"
+                                    }
+                                ],
+                                "depends_on": "CU_RELINKER_ENABLE",
+                                "help": "\"Enable this option to use customized relinker configuration\nfiles instead of default ones\"",
+                                "id": "CU_RELINKER_ENABLE_CUSTOMIZED_CONFIGURATION_FILES",
+                                "name": "CU_RELINKER_ENABLE_CUSTOMIZED_CONFIGURATION_FILES",
+                                "range": null,
+                                "title": "Enable customized relinker configuration files",
+                                "type": "bool"
+                            }
+                        ],
+                        "depends_on": null,
+                        "help": "\"Enable relinker to linker some IRAM functions to Flash\"",
+                        "id": "CU_RELINKER_ENABLE",
+                        "name": "CU_RELINKER_ENABLE",
+                        "range": null,
+                        "title": "Enable relinker",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": "<choice CU_DIAGNOSTICS_COLOR>",
+                                "help": null,
+                                "id": "CU_DIAGNOSTICS_COLOR_NEVER",
+                                "name": "CU_DIAGNOSTICS_COLOR_NEVER",
+                                "range": null,
+                                "title": "never",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "<choice CU_DIAGNOSTICS_COLOR>",
+                                "help": null,
+                                "id": "CU_DIAGNOSTICS_COLOR_ALWAYS",
+                                "name": "CU_DIAGNOSTICS_COLOR_ALWAYS",
+                                "range": null,
+                                "title": "always",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "<choice CU_DIAGNOSTICS_COLOR>",
+                                "help": null,
+                                "id": "CU_DIAGNOSTICS_COLOR_AUTO",
+                                "name": "CU_DIAGNOSTICS_COLOR_AUTO",
+                                "range": null,
+                                "title": "auto",
+                                "type": "bool"
+                            }
+                        ],
+                        "depends_on": null,
+                        "help": "Use color in diagnostics. \"never\", \"always\", or \"auto\". If \"always\", GCC will output\nwith color defined in GCC_COLORS environment variable. If \"never\", only output plain\ntext. If \"auto\", only output with color when the standard error is a terminal and when\nnot executing in an emacs shell.",
+                        "id": "component-config-cmake-utilities-color-in-diagnostics",
+                        "name": "CU_DIAGNOSTICS_COLOR",
+                        "title": "Color in diagnostics",
+                        "type": "choice"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "\"Enable this option, users can enable GCC link time optimization(LTO)\n feature for target components or dependencies.",
+                        "id": "CU_GCC_LTO_ENABLE",
+                        "name": "CU_GCC_LTO_ENABLE",
+                        "range": null,
+                        "title": "Enable GCC link time optimization(LTO)",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "\"Enable this option, user can make string in designated components align\n by 1-byte instead 1-word(4-byte), this can reduce unnecessary filled data\n so that to reduce firmware size.\"",
+                        "id": "CU_GCC_STRING_1BYTE_ALIGN",
+                        "name": "CU_GCC_STRING_1BYTE_ALIGN",
+                        "range": null,
+                        "title": "GCC string 1-byte align",
+                        "type": "bool"
+                    }
+                ],
+                "depends_on": null,
+                "id": "component-config-cmake-utilities",
+                "title": "CMake Utilities",
+                "type": "menu"
+            },
+            {
+                "children": [
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Enable this option to support codec ES8311.",
+                        "id": "CODEC_ES8311_SUPPORT",
+                        "name": "CODEC_ES8311_SUPPORT",
+                        "range": null,
+                        "title": "Support ES8311 Codec Chip",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Enable this option to support codec ES7210.",
+                        "id": "CODEC_ES7210_SUPPORT",
+                        "name": "CODEC_ES7210_SUPPORT",
+                        "range": null,
+                        "title": "Support ES7210 Codec Chip",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Enable this option to support codec ES7243.",
+                        "id": "CODEC_ES7243_SUPPORT",
+                        "name": "CODEC_ES7243_SUPPORT",
+                        "range": null,
+                        "title": "Support ES7243 Codec Chip",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Enable this option to support codec ES7243E.",
+                        "id": "CODEC_ES7243E_SUPPORT",
+                        "name": "CODEC_ES7243E_SUPPORT",
+                        "range": null,
+                        "title": "Support ES7243E Codec Chip",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Enable this option to support codec ES8156.",
+                        "id": "CODEC_ES8156_SUPPORT",
+                        "name": "CODEC_ES8156_SUPPORT",
+                        "range": null,
+                        "title": "Support ES8156 Codec Chip",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Enable this option to support codec AW88298.",
+                        "id": "CODEC_AW88298_SUPPORT",
+                        "name": "CODEC_AW88298_SUPPORT",
+                        "range": null,
+                        "title": "Support AW88298 Codec Chip",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Enable this option to support codec ES8374.",
+                        "id": "CODEC_ES8374_SUPPORT",
+                        "name": "CODEC_ES8374_SUPPORT",
+                        "range": null,
+                        "title": "Support ES8374 Codec Chip",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Enable this option to support codec ES8388.",
+                        "id": "CODEC_ES8388_SUPPORT",
+                        "name": "CODEC_ES8388_SUPPORT",
+                        "range": null,
+                        "title": "Support ES8388 Codec Chip",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Enable this option to support codec TAS5805M.",
+                        "id": "CODEC_TAS5805M_SUPPORT",
+                        "name": "CODEC_TAS5805M_SUPPORT",
+                        "range": null,
+                        "title": "Support TAS5805M Codec Chip",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Enable this option to support codec ZL38063.\nZL38063 firmware only support xtensa, don't enable for RISC-V IC.",
+                        "id": "CODEC_ZL38063_SUPPORT",
+                        "name": "CODEC_ZL38063_SUPPORT",
+                        "range": null,
+                        "title": "Support ZL38063 Codec Chip",
+                        "type": "bool"
+                    }
+                ],
+                "depends_on": null,
+                "id": "component-config-audio-codec-device-configuration",
+                "title": "Audio Codec Device Configuration",
+                "type": "menu"
+            },
+            {
+                "children": [
+                    {
+                        "children": [],
+                        "depends_on": "IDF_TARGET_ESP32 || IDF_TARGET_ESP32S3",
+                        "help": null,
+                        "id": "DSP_OPTIMIZATIONS_SUPPORTED",
+                        "name": "DSP_OPTIMIZATIONS_SUPPORTED",
+                        "range": null,
+                        "title": null,
+                        "type": "bool"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": "<choice DSP_OPTIMIZATION>",
+                                "help": null,
+                                "id": "DSP_ANSI",
+                                "name": "DSP_ANSI",
+                                "range": null,
+                                "title": "ANSI C",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "DSP_OPTIMIZATIONS_SUPPORTED && <choice DSP_OPTIMIZATION>",
+                                "help": null,
+                                "id": "DSP_OPTIMIZED",
+                                "name": "DSP_OPTIMIZED",
+                                "range": null,
+                                "title": "Optimized",
+                                "type": "bool"
+                            }
+                        ],
+                        "depends_on": null,
+                        "help": "An ANSI C version could be used for verification and debug purpose,\nor for chips where an optimized version is not available.",
+                        "id": "component-config-dsp-library-dsp-optimization",
+                        "name": "DSP_OPTIMIZATION",
+                        "title": "DSP Optimization",
+                        "type": "choice"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": null,
+                        "id": "DSP_OPTIMIZATION",
+                        "name": "DSP_OPTIMIZATION",
+                        "range": null,
+                        "title": null,
+                        "type": "int"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": "<choice DSP_MAX_FFT_SIZE>",
+                                "help": null,
+                                "id": "DSP_MAX_FFT_SIZE_512",
+                                "name": "DSP_MAX_FFT_SIZE_512",
+                                "range": null,
+                                "title": "512",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "<choice DSP_MAX_FFT_SIZE>",
+                                "help": null,
+                                "id": "DSP_MAX_FFT_SIZE_1024",
+                                "name": "DSP_MAX_FFT_SIZE_1024",
+                                "range": null,
+                                "title": "1024",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "<choice DSP_MAX_FFT_SIZE>",
+                                "help": null,
+                                "id": "DSP_MAX_FFT_SIZE_2048",
+                                "name": "DSP_MAX_FFT_SIZE_2048",
+                                "range": null,
+                                "title": "2048",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "<choice DSP_MAX_FFT_SIZE>",
+                                "help": null,
+                                "id": "DSP_MAX_FFT_SIZE_4096",
+                                "name": "DSP_MAX_FFT_SIZE_4096",
+                                "range": null,
+                                "title": "4096",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "<choice DSP_MAX_FFT_SIZE>",
+                                "help": null,
+                                "id": "DSP_MAX_FFT_SIZE_8192",
+                                "name": "DSP_MAX_FFT_SIZE_8192",
+                                "range": null,
+                                "title": "8192",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "<choice DSP_MAX_FFT_SIZE>",
+                                "help": null,
+                                "id": "DSP_MAX_FFT_SIZE_16384",
+                                "name": "DSP_MAX_FFT_SIZE_16384",
+                                "range": null,
+                                "title": "16384",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "<choice DSP_MAX_FFT_SIZE>",
+                                "help": null,
+                                "id": "DSP_MAX_FFT_SIZE_32768",
+                                "name": "DSP_MAX_FFT_SIZE_32768",
+                                "range": null,
+                                "title": "32768",
+                                "type": "bool"
+                            }
+                        ],
+                        "depends_on": null,
+                        "help": "This is default FFT size for internal usage.",
+                        "id": "component-config-dsp-library-maximum-fft-length",
+                        "name": "DSP_MAX_FFT_SIZE",
+                        "title": "Maximum FFT length",
+                        "type": "choice"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": null,
+                        "id": "DSP_MAX_FFT_SIZE",
+                        "name": "DSP_MAX_FFT_SIZE",
+                        "range": null,
+                        "title": null,
+                        "type": "int"
+                    }
+                ],
+                "depends_on": null,
+                "id": "component-config-dsp-library",
+                "title": "DSP Library",
+                "type": "menu"
+            },
+            {
+                "children": [
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Error check assert the application before returning the error code.",
+                        "id": "BSP_ERROR_CHECK",
+                        "name": "BSP_ERROR_CHECK",
+                        "range": null,
+                        "title": "Enable error check in BSP",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "ESP32-S2 has two I2C peripherals, pick the one you want to use.",
+                                "id": "BSP_I2C_NUM",
+                                "name": "BSP_I2C_NUM",
+                                "range": [
+                                    0,
+                                    1
+                                ],
+                                "title": "I2C peripheral index",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "I2C has two speed modes: normal (100kHz) and fast (400kHz).",
+                                "id": "BSP_I2C_FAST_MODE",
+                                "name": "BSP_I2C_FAST_MODE",
+                                "range": null,
+                                "title": "Enable I2C fast mode",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": null,
+                                "id": "BSP_I2C_CLK_SPEED_HZ",
+                                "name": "BSP_I2C_CLK_SPEED_HZ",
+                                "range": null,
+                                "title": null,
+                                "type": "int"
+                            }
+                        ],
+                        "depends_on": null,
+                        "id": "component-config-board-support-package-i2c",
+                        "title": "I2C",
+                        "type": "menu"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Format SPIFFS if it fails to mount the filesystem.",
+                                "id": "BSP_SPIFFS_FORMAT_ON_MOUNT_FAIL",
+                                "name": "BSP_SPIFFS_FORMAT_ON_MOUNT_FAIL",
+                                "range": null,
+                                "title": "Format SPIFFS if mounting fails",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Mount point of SPIFFS in the Virtual File System.",
+                                "id": "BSP_SPIFFS_MOUNT_POINT",
+                                "name": "BSP_SPIFFS_MOUNT_POINT",
+                                "range": null,
+                                "title": "SPIFFS mount point",
+                                "type": "string"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Partition label which stores SPIFFS.",
+                                "id": "BSP_SPIFFS_PARTITION_LABEL",
+                                "name": "BSP_SPIFFS_PARTITION_LABEL",
+                                "range": null,
+                                "title": "Partition label of SPIFFS",
+                                "type": "string"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Supported max files for SPIFFS in the Virtual File System.",
+                                "id": "BSP_SPIFFS_MAX_FILES",
+                                "name": "BSP_SPIFFS_MAX_FILES",
+                                "range": null,
+                                "title": "Maximum files that could be open at the same time",
+                                "type": "int"
+                            }
+                        ],
+                        "depends_on": null,
+                        "id": "component-config-board-support-package-spiffs-virtual-file-system",
+                        "title": "SPIFFS - Virtual File System",
+                        "type": "menu"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "The SDMMC host will format (FAT) the uSD card if it fails to mount the filesystem.",
+                                "id": "BSP_SD_FORMAT_ON_MOUNT_FAIL",
+                                "name": "BSP_SD_FORMAT_ON_MOUNT_FAIL",
+                                "range": null,
+                                "title": "Format uSD card if mounting fails",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Mount point of the uSD card in the Virtual File System",
+                                "id": "BSP_SD_MOUNT_POINT",
+                                "name": "BSP_SD_MOUNT_POINT",
+                                "range": null,
+                                "title": "uSD card mount point",
+                                "type": "string"
+                            }
+                        ],
+                        "depends_on": null,
+                        "id": "component-config-board-support-package-usd-card-virtual-file-system",
+                        "title": "uSD card - Virtual File System",
+                        "type": "menu"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "The Board Support Package will create a task that will periodically handle LVGL operation in lv_timer_handler().",
+                                "id": "BSP_DISPLAY_LVGL_TASK_PRIORITY",
+                                "name": "BSP_DISPLAY_LVGL_TASK_PRIORITY",
+                                "range": null,
+                                "title": "LVGL task priority",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Period of LVGL tick timer.",
+                                "id": "BSP_DISPLAY_LVGL_TICK",
+                                "name": "BSP_DISPLAY_LVGL_TICK",
+                                "range": [
+                                    1,
+                                    100
+                                ],
+                                "title": "LVGL tick period",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Maximum time for task sleep in ms.",
+                                "id": "BSP_DISPLAY_LVGL_MAX_SLEEP",
+                                "name": "BSP_DISPLAY_LVGL_MAX_SLEEP",
+                                "range": [
+                                    1,
+                                    500
+                                ],
+                                "title": "LVGL maximum sleep time in ms",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "LEDC channel is used to generate PWM signal that controls display brightness.\nSet LEDC index that should be used.",
+                                "id": "BSP_DISPLAY_BRIGHTNESS_LEDC_CH",
+                                "name": "BSP_DISPLAY_BRIGHTNESS_LEDC_CH",
+                                "range": [
+                                    0,
+                                    7
+                                ],
+                                "title": "LEDC channel index",
+                                "type": "int"
+                            }
+                        ],
+                        "depends_on": null,
+                        "id": "component-config-board-support-package-display",
+                        "title": "Display",
+                        "type": "menu"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "ESP32S3 has two I2S peripherals, pick the one you want to use.",
+                        "id": "BSP_I2S_NUM",
+                        "name": "BSP_I2S_NUM",
+                        "range": [
+                            0,
+                            1
+                        ],
+                        "title": "I2S peripheral index",
+                        "type": "int"
+                    }
+                ],
+                "depends_on": null,
+                "id": "component-config-board-support-package",
+                "title": "Board Support Package",
                 "type": "menu"
             },
             {
@@ -32579,353 +32691,241 @@
                 "children": [
                     {
                         "children": [],
-                        "depends_on": "IDF_TARGET_ESP32 || IDF_TARGET_ESP32S3",
-                        "help": null,
-                        "id": "DSP_OPTIMIZATIONS_SUPPORTED",
-                        "name": "DSP_OPTIMIZATIONS_SUPPORTED",
-                        "range": null,
-                        "title": null,
-                        "type": "bool"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": "<choice DSP_OPTIMIZATION>",
-                                "help": null,
-                                "id": "DSP_ANSI",
-                                "name": "DSP_ANSI",
-                                "range": null,
-                                "title": "ANSI C",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "DSP_OPTIMIZATIONS_SUPPORTED && <choice DSP_OPTIMIZATION>",
-                                "help": null,
-                                "id": "DSP_OPTIMIZED",
-                                "name": "DSP_OPTIMIZED",
-                                "range": null,
-                                "title": "Optimized",
-                                "type": "bool"
-                            }
-                        ],
                         "depends_on": null,
-                        "help": "An ANSI C version could be used for verification and debug purpose,\nor for chips where an optimized version is not available.",
-                        "id": "component-config-dsp-library-dsp-optimization",
-                        "name": "DSP_OPTIMIZATION",
-                        "title": "DSP Optimization",
-                        "type": "choice"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": null,
-                        "id": "DSP_OPTIMIZATION",
-                        "name": "DSP_OPTIMIZATION",
-                        "range": null,
-                        "title": null,
-                        "type": "int"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": "<choice DSP_MAX_FFT_SIZE>",
-                                "help": null,
-                                "id": "DSP_MAX_FFT_SIZE_512",
-                                "name": "DSP_MAX_FFT_SIZE_512",
-                                "range": null,
-                                "title": "512",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "<choice DSP_MAX_FFT_SIZE>",
-                                "help": null,
-                                "id": "DSP_MAX_FFT_SIZE_1024",
-                                "name": "DSP_MAX_FFT_SIZE_1024",
-                                "range": null,
-                                "title": "1024",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "<choice DSP_MAX_FFT_SIZE>",
-                                "help": null,
-                                "id": "DSP_MAX_FFT_SIZE_2048",
-                                "name": "DSP_MAX_FFT_SIZE_2048",
-                                "range": null,
-                                "title": "2048",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "<choice DSP_MAX_FFT_SIZE>",
-                                "help": null,
-                                "id": "DSP_MAX_FFT_SIZE_4096",
-                                "name": "DSP_MAX_FFT_SIZE_4096",
-                                "range": null,
-                                "title": "4096",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "<choice DSP_MAX_FFT_SIZE>",
-                                "help": null,
-                                "id": "DSP_MAX_FFT_SIZE_8192",
-                                "name": "DSP_MAX_FFT_SIZE_8192",
-                                "range": null,
-                                "title": "8192",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "<choice DSP_MAX_FFT_SIZE>",
-                                "help": null,
-                                "id": "DSP_MAX_FFT_SIZE_16384",
-                                "name": "DSP_MAX_FFT_SIZE_16384",
-                                "range": null,
-                                "title": "16384",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "<choice DSP_MAX_FFT_SIZE>",
-                                "help": null,
-                                "id": "DSP_MAX_FFT_SIZE_32768",
-                                "name": "DSP_MAX_FFT_SIZE_32768",
-                                "range": null,
-                                "title": "32768",
-                                "type": "bool"
-                            }
-                        ],
-                        "depends_on": null,
-                        "help": "This is default FFT size for internal usage.",
-                        "id": "component-config-dsp-library-maximum-fft-length",
-                        "name": "DSP_MAX_FFT_SIZE",
-                        "title": "Maximum FFT length",
-                        "type": "choice"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": null,
-                        "id": "DSP_MAX_FFT_SIZE",
-                        "name": "DSP_MAX_FFT_SIZE",
-                        "range": null,
-                        "title": null,
-                        "type": "int"
-                    }
-                ],
-                "depends_on": null,
-                "id": "component-config-dsp-library",
-                "title": "DSP Library",
-                "type": "menu"
-            },
-            {
-                "children": [
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Error check assert the application before returning the error code.",
-                        "id": "BSP_ERROR_CHECK",
-                        "name": "BSP_ERROR_CHECK",
-                        "range": null,
-                        "title": "Enable error check in BSP",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "ESP32-S2 has two I2C peripherals, pick the one you want to use.",
-                                "id": "BSP_I2C_NUM",
-                                "name": "BSP_I2C_NUM",
-                                "range": [
-                                    0,
-                                    1
-                                ],
-                                "title": "I2C peripheral index",
-                                "type": "int"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "I2C has two speed modes: normal (100kHz) and fast (400kHz).",
-                                "id": "BSP_I2C_FAST_MODE",
-                                "name": "BSP_I2C_FAST_MODE",
-                                "range": null,
-                                "title": "Enable I2C fast mode",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": null,
-                                "id": "BSP_I2C_CLK_SPEED_HZ",
-                                "name": "BSP_I2C_CLK_SPEED_HZ",
-                                "range": null,
-                                "title": null,
-                                "type": "int"
-                            }
-                        ],
-                        "depends_on": null,
-                        "id": "component-config-board-support-package-i2c",
-                        "title": "I2C",
-                        "type": "menu"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "Format SPIFFS if it fails to mount the filesystem.",
-                                "id": "BSP_SPIFFS_FORMAT_ON_MOUNT_FAIL",
-                                "name": "BSP_SPIFFS_FORMAT_ON_MOUNT_FAIL",
-                                "range": null,
-                                "title": "Format SPIFFS if mounting fails",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "Mount point of SPIFFS in the Virtual File System.",
-                                "id": "BSP_SPIFFS_MOUNT_POINT",
-                                "name": "BSP_SPIFFS_MOUNT_POINT",
-                                "range": null,
-                                "title": "SPIFFS mount point",
-                                "type": "string"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "Partition label which stores SPIFFS.",
-                                "id": "BSP_SPIFFS_PARTITION_LABEL",
-                                "name": "BSP_SPIFFS_PARTITION_LABEL",
-                                "range": null,
-                                "title": "Partition label of SPIFFS",
-                                "type": "string"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "Supported max files for SPIFFS in the Virtual File System.",
-                                "id": "BSP_SPIFFS_MAX_FILES",
-                                "name": "BSP_SPIFFS_MAX_FILES",
-                                "range": null,
-                                "title": "Maximum files that could be open at the same time",
-                                "type": "int"
-                            }
-                        ],
-                        "depends_on": null,
-                        "id": "component-config-board-support-package-spiffs-virtual-file-system",
-                        "title": "SPIFFS - Virtual File System",
-                        "type": "menu"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "The SDMMC host will format (FAT) the uSD card if it fails to mount the filesystem.",
-                                "id": "BSP_SD_FORMAT_ON_MOUNT_FAIL",
-                                "name": "BSP_SD_FORMAT_ON_MOUNT_FAIL",
-                                "range": null,
-                                "title": "Format uSD card if mounting fails",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "Mount point of the uSD card in the Virtual File System",
-                                "id": "BSP_SD_MOUNT_POINT",
-                                "name": "BSP_SD_MOUNT_POINT",
-                                "range": null,
-                                "title": "uSD card mount point",
-                                "type": "string"
-                            }
-                        ],
-                        "depends_on": null,
-                        "id": "component-config-board-support-package-usd-card-virtual-file-system",
-                        "title": "uSD card - Virtual File System",
-                        "type": "menu"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "The Board Support Package will create a task that will periodically handle LVGL operation in lv_timer_handler().",
-                                "id": "BSP_DISPLAY_LVGL_TASK_PRIORITY",
-                                "name": "BSP_DISPLAY_LVGL_TASK_PRIORITY",
-                                "range": null,
-                                "title": "LVGL task priority",
-                                "type": "int"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "Period of LVGL tick timer.",
-                                "id": "BSP_DISPLAY_LVGL_TICK",
-                                "name": "BSP_DISPLAY_LVGL_TICK",
-                                "range": [
-                                    1,
-                                    100
-                                ],
-                                "title": "LVGL tick period",
-                                "type": "int"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "Maximum time for task sleep in ms.",
-                                "id": "BSP_DISPLAY_LVGL_MAX_SLEEP",
-                                "name": "BSP_DISPLAY_LVGL_MAX_SLEEP",
-                                "range": [
-                                    1,
-                                    500
-                                ],
-                                "title": "LVGL maximum sleep time in ms",
-                                "type": "int"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "LEDC channel is used to generate PWM signal that controls display brightness.\nSet LEDC index that should be used.",
-                                "id": "BSP_DISPLAY_BRIGHTNESS_LEDC_CH",
-                                "name": "BSP_DISPLAY_BRIGHTNESS_LEDC_CH",
-                                "range": [
-                                    0,
-                                    7
-                                ],
-                                "title": "LEDC channel index",
-                                "type": "int"
-                            }
-                        ],
-                        "depends_on": null,
-                        "id": "component-config-board-support-package-display",
-                        "title": "Display",
-                        "type": "menu"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "ESP32S3 has two I2S peripherals, pick the one you want to use.",
-                        "id": "BSP_I2S_NUM",
-                        "name": "BSP_I2S_NUM",
+                        "help": "Number of network interfaces to be served by the mDNS library.\nLowering this number helps to reduce some static RAM usage.",
+                        "id": "MDNS_MAX_INTERFACES",
+                        "name": "MDNS_MAX_INTERFACES",
                         "range": [
-                            0,
-                            1
+                            1,
+                            9
                         ],
-                        "title": "I2S peripheral index",
+                        "title": "Max number of interfaces",
                         "type": "int"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Services take up a certain amount of memory, and allowing fewer\nservices to be open at the same time conserves memory. Specify\nthe maximum amount of services here.",
+                        "id": "MDNS_MAX_SERVICES",
+                        "name": "MDNS_MAX_SERVICES",
+                        "range": null,
+                        "title": "Max number of services",
+                        "type": "int"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Allows setting mDNS task priority. Please do not set the task priority\nhigher than priorities of system tasks. Compile time warning/error\nwould be emitted if the chosen task priority were too high.",
+                        "id": "MDNS_TASK_PRIORITY",
+                        "name": "MDNS_TASK_PRIORITY",
+                        "range": [
+                            1,
+                            255
+                        ],
+                        "title": "mDNS task priority",
+                        "type": "int"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Allows setting the length of mDNS action queue.",
+                        "id": "MDNS_ACTION_QUEUE_LEN",
+                        "name": "MDNS_ACTION_QUEUE_LEN",
+                        "range": [
+                            8,
+                            64
+                        ],
+                        "title": "Maximum actions pending to the server",
+                        "type": "int"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Allows setting mDNS task stacksize.",
+                        "id": "MDNS_TASK_STACK_SIZE",
+                        "name": "MDNS_TASK_STACK_SIZE",
+                        "range": null,
+                        "title": "mDNS task stack size",
+                        "type": "int"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": "<choice MDNS_TASK_AFFINITY>",
+                                "help": null,
+                                "id": "MDNS_TASK_AFFINITY_NO_AFFINITY",
+                                "name": "MDNS_TASK_AFFINITY_NO_AFFINITY",
+                                "range": null,
+                                "title": "No affinity",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "<choice MDNS_TASK_AFFINITY>",
+                                "help": null,
+                                "id": "MDNS_TASK_AFFINITY_CPU0",
+                                "name": "MDNS_TASK_AFFINITY_CPU0",
+                                "range": null,
+                                "title": "CPU0",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "!FREERTOS_UNICORE && <choice MDNS_TASK_AFFINITY>",
+                                "help": null,
+                                "id": "MDNS_TASK_AFFINITY_CPU1",
+                                "name": "MDNS_TASK_AFFINITY_CPU1",
+                                "range": null,
+                                "title": "CPU1",
+                                "type": "bool"
+                            }
+                        ],
+                        "depends_on": null,
+                        "help": "Allows setting mDNS tasks affinity, i.e. whether the task is pinned to\nCPU0, pinned to CPU1, or allowed to run on any CPU.",
+                        "id": "component-config-mdns-mdns-task-affinity",
+                        "name": "MDNS_TASK_AFFINITY",
+                        "title": "mDNS task affinity",
+                        "type": "choice"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": null,
+                        "id": "MDNS_TASK_AFFINITY",
+                        "name": "MDNS_TASK_AFFINITY",
+                        "range": null,
+                        "title": null,
+                        "type": "hex"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Configures timeout for adding a new mDNS service. Adding a service\nfails if could not be completed within this time.",
+                        "id": "MDNS_SERVICE_ADD_TIMEOUT_MS",
+                        "name": "MDNS_SERVICE_ADD_TIMEOUT_MS",
+                        "range": [
+                            10,
+                            30000
+                        ],
+                        "title": "mDNS adding service timeout (ms)",
+                        "type": "int"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Configures period of mDNS timer, which periodically transmits packets\nand schedules mDNS searches.",
+                        "id": "MDNS_TIMER_PERIOD_MS",
+                        "name": "MDNS_TIMER_PERIOD_MS",
+                        "range": [
+                            10,
+                            10000
+                        ],
+                        "title": "mDNS timer period (ms)",
+                        "type": "int"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Enables optional mDNS networking implementation using BSD sockets\nin UDP multicast mode.\nThis option creates a new thread to serve receiving packets (TODO).\nThis option uses additional N sockets, where N is number of interfaces.",
+                        "id": "MDNS_NETWORKING_SOCKET",
+                        "name": "MDNS_NETWORKING_SOCKET",
+                        "range": null,
+                        "title": "Use BSD sockets for mDNS networking",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Enable only if the querier and the responder share the same IP address.\nThis usually happens in test mode, where we may run multiple instances of\nresponders/queriers on the same interface.",
+                        "id": "MDNS_SKIP_SUPPRESSING_OWN_QUERIES",
+                        "name": "MDNS_SKIP_SUPPRESSING_OWN_QUERIES",
+                        "range": null,
+                        "title": "Skip suppressing our own packets",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Enable for the library to log received and sent mDNS packets to stdout.",
+                        "id": "MDNS_ENABLE_DEBUG_PRINTS",
+                        "name": "MDNS_ENABLE_DEBUG_PRINTS",
+                        "range": null,
+                        "title": "Enable debug prints of mDNS packets",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Enable for the console cli to be available on the device.",
+                        "id": "MDNS_ENABLE_CONSOLE_CLI",
+                        "name": "MDNS_ENABLE_CONSOLE_CLI",
+                        "range": null,
+                        "title": "Enable Command Line Interface on device console",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Enables support for IPv4 reverse lookup. If enabled, the mDNS library\nresponse to PTR queries of \"A.B.C.D.in-addr.arpa\" type.",
+                        "id": "MDNS_RESPOND_REVERSE_QUERIES",
+                        "name": "MDNS_RESPOND_REVERSE_QUERIES",
+                        "range": null,
+                        "title": "Enable responding to IPv4 reverse queries",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Enables adding multiple service instances under the same service type.",
+                        "id": "MDNS_MULTIPLE_INSTANCE",
+                        "name": "MDNS_MULTIPLE_INSTANCE",
+                        "range": null,
+                        "title": "Multiple instances under the same service type",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Set up mDNS for the default WiFi station.\nDisable this option if you do not need mDNS on default WiFi STA.",
+                                "id": "MDNS_PREDEF_NETIF_STA",
+                                "name": "MDNS_PREDEF_NETIF_STA",
+                                "range": null,
+                                "title": "Use predefined interface for WiFi Station",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Set up mDNS for the default WiFi Access Point.\nDisable this option if you do not need mDNS on default WiFi AP.",
+                                "id": "MDNS_PREDEF_NETIF_AP",
+                                "name": "MDNS_PREDEF_NETIF_AP",
+                                "range": null,
+                                "title": "Use predefined interface for WiFi Access Point",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "ETH_ENABLED",
+                                "help": "Set up mDNS for the default Ethernet interface.\nDisable this option if you do not need mDNS on default Ethernet.",
+                                "id": "MDNS_PREDEF_NETIF_ETH",
+                                "name": "MDNS_PREDEF_NETIF_ETH",
+                                "range": null,
+                                "title": "Use predefined interface for Ethernet",
+                                "type": "bool"
+                            }
+                        ],
+                        "depends_on": null,
+                        "id": "component-config-mdns-mdns-predefined-interfaces",
+                        "title": "MDNS Predefined interfaces",
+                        "type": "menu"
                     }
                 ],
                 "depends_on": null,
-                "id": "component-config-board-support-package",
-                "title": "Board Support Package",
+                "id": "component-config-mdns",
+                "title": "mDNS",
                 "type": "menu"
             }
         ],

@@ -1,13 +1,9 @@
 #include "app_face.hpp"
-
 #include <list>
-
 #include "esp_log.h"
 #include "esp_camera.h"
-
 #include "dl_image.hpp"
 #include "fb_gfx.h"
-
 #include "who_ai_utils.hpp"
 
 static const char TAG[] = "App/Face";
@@ -34,7 +30,7 @@ static int rgb_printf(camera_fb_t *fb, uint32_t color, const char *format, ...)
     va_copy(copy, arg);
     len = vsnprintf(loc_buf, sizeof(loc_buf), format, arg);
     va_end(copy);
-    if (len >= sizeof(loc_buf))
+    if (len >= sizeof(loc_buf)) 
     {
         temp = (char *)malloc(len + 1);
         if (temp == NULL)
@@ -45,7 +41,7 @@ static int rgb_printf(camera_fb_t *fb, uint32_t color, const char *format, ...)
     vsnprintf(temp, len + 1, format, arg);
     va_end(arg);
     rgb_print(fb, color, temp);
-    if (len > 64)
+    if (len > 64) 
     {
         free(temp);
     }
@@ -53,12 +49,10 @@ static int rgb_printf(camera_fb_t *fb, uint32_t color, const char *format, ...)
 }
 
 AppFace::AppFace(AppButton *key,
-                 AppSpeech *speech,
                  QueueHandle_t queue_i,
                  QueueHandle_t queue_o,
                  void (*callback)(camera_fb_t *)) : Frame(queue_i, queue_o, callback),
                                                     key(key),
-                                                    speech(speech),
                                                     detector(0.3F, 0.3F, 10, 0.3F),
                                                     detector2(0.4F, 0.3F, 10),
                                                     state(FACE_IDLE),
@@ -83,7 +77,7 @@ AppFace::~AppFace()
 
 void AppFace::update()
 {
-    // Parse key
+    // Parse button
     if (this->key->pressed > BUTTON_IDLE)
     {
         if (this->key->pressed == BUTTON_MENU)
@@ -105,30 +99,6 @@ void AppFace::update()
             this->state = FACE_DELETE;
         }
     }
-
-    // Parse speech recognition
-    if (this->speech->command > COMMAND_NOT_DETECTED)
-    {
-        if (this->speech->command >= MENU_STOP_WORKING && this->speech->command <= MENU_MOTION_DETECTION)
-        {
-            this->state = FACE_IDLE;
-            this->switch_on = (this->speech->command == MENU_FACE_RECOGNITION) ? true : false;
-            ESP_LOGD(TAG, "%s", this->switch_on ? "ON" : "OFF");
-        }
-        else if (this->speech->command == ACTION_ENROLL)
-        {
-            this->state = FACE_ENROLL;
-        }
-        else if (this->speech->command == ACTION_RECOGNIZE)
-        {
-            this->state = FACE_RECOGNIZE;
-        }
-        else if (this->speech->command == ACTION_DELETE)
-        {
-            this->state = FACE_DELETE;
-        }
-    }
-    ESP_LOGD(TAG, "Human face recognition state = %d", this->state);
 }
 
 static void task(AppFace *self)

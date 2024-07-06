@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/esp32-s3-eye")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/digital-camera-fw")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -419,6 +419,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/build/esp-idf/espressif__cmake_utilities/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/build/esp-idf/espressif__esp_lcd_ili9341/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/build/esp-idf/main/cmake_install.cmake")
 endif()
 
@@ -440,11 +450,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/build/esp-idf/fb_gfx/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/build/esp-idf/espressif__cmake_utilities/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

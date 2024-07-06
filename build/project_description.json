@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "digital-camera-fw",
-    "project_version":    "v0.9.4-191-ge356eee",
+    "project_version":    "9a27ca0-dirty",
     "project_path":       "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.1.4",
     "build_dir":          "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/build",
@@ -21,12 +21,12 @@
     "monitor_toolprefix": "xtensa-esp32s3-elf-",
     "c_compiler":         "C:/Espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc.exe",
     "config_environment" : {
-        "COMPONENT_KCONFIGS" : "C:/Espressif/frameworks/esp-idf-v5.1.4/components/app_trace/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/bt/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/driver/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/efuse/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp-tls/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_adc/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_coex/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_common/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_eth/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_event/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_gdbstub/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_http_client/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_http_server/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_https_ota/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_https_server/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_hw_support/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_lcd/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_netif/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_partition/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_phy/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_pm/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_psram/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_ringbuf/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_timer/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_wifi/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/espcoredump/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/fatfs/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/hal/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/heap/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/ieee802154/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/log/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/lwip/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/mbedtls/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/mqtt/esp-mqtt/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/newlib/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/nvs_flash/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/openthread/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/protocomm/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/pthread/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/soc/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/spi_flash/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/spiffs/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/tcp_transport/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/ulp/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/unity/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/usb/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/wear_levelling/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/wifi_provisioning/Kconfig;C:/Espressif/frameworks/esp-who/components/modules/Kconfig;C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/Kconfig;C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__cmake_utilities/Kconfig;C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__mdns/Kconfig;C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__button/Kconfig;C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp32-camera/Kconfig;C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp-dsp/Kconfig;C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp32_s3_eye_noglib/Kconfig",
+        "COMPONENT_KCONFIGS" : "C:/Espressif/frameworks/esp-idf-v5.1.4/components/app_trace/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/bt/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/driver/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/efuse/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp-tls/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_adc/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_coex/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_common/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_eth/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_event/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_gdbstub/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_http_client/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_http_server/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_https_ota/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_https_server/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_hw_support/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_lcd/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_netif/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_partition/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_phy/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_pm/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_psram/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_ringbuf/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_timer/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_wifi/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/espcoredump/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/fatfs/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/hal/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/heap/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/ieee802154/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/log/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/lwip/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/mbedtls/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/mqtt/esp-mqtt/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/newlib/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/nvs_flash/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/openthread/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/protocomm/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/pthread/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/soc/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/spi_flash/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/spiffs/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/tcp_transport/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/ulp/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/unity/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/usb/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/wear_levelling/Kconfig;C:/Espressif/frameworks/esp-idf-v5.1.4/components/wifi_provisioning/Kconfig;C:/Espressif/frameworks/esp-who/components/modules/Kconfig;C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__button/Kconfig;C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__cmake_utilities/Kconfig;C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/Kconfig;C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp-dsp/Kconfig;C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp32_s3_eye_noglib/Kconfig;C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp32-camera/Kconfig;C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__mdns/Kconfig",
         "COMPONENT_KCONFIGS_PROJBUILD" : "C:/Espressif/frameworks/esp-idf-v5.1.4/components/bootloader/Kconfig.projbuild;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_app_format/Kconfig.projbuild;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_rom/Kconfig.projbuild;C:/Espressif/frameworks/esp-idf-v5.1.4/components/esptool_py/Kconfig.projbuild;C:/Espressif/frameworks/esp-idf-v5.1.4/components/partition_table/Kconfig.projbuild;C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp-sr/Kconfig.projbuild"
     },
     "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "xtensa" ],
-    "build_components" : [ "app_trace", "app_update", "bootloader", "bootloader_support", "bt", "cmock", "console", "cxx", "driver", "efuse", "esp-code-scanner", "esp-dl", "esp-tls", "esp_adc", "esp_app_format", "esp_coex", "esp_common", "esp_eth", "esp_event", "esp_gdbstub", "esp_hid", "esp_http_client", "esp_http_server", "esp_https_ota", "esp_https_server", "esp_hw_support", "esp_lcd", "esp_local_ctrl", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_system", "esp_timer", "esp_wifi", "espcoredump", "espressif__button", "espressif__cmake_utilities", "espressif__esp-dsp", "espressif__esp-sr", "espressif__esp32-camera", "espressif__esp32_s3_eye_noglib", "espressif__esp_codec_dev", "espressif__mdns", "esptool_py", "fatfs", "fb_gfx", "freertos", "hal", "heap", "http_parser", "idf_test", "ieee802154", "json", "log", "lwip", "main", "mbedtls", "modules", "mqtt", "newlib", "nvs_flash", "openthread", "partition_table", "perfmon", "protobuf-c", "protocomm", "pthread", "sdmmc", "soc", "spi_flash", "spiffs", "tcp_transport", "touch_element", "ulp", "unity", "usb", "vfs", "wear_levelling", "wifi_provisioning", "wpa_supplicant", "xtensa", "" ],
-    "build_component_paths" : [ "C:/Espressif/frameworks/esp-idf-v5.1.4/components/app_trace", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/app_update", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/bootloader", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/bootloader_support", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/bt", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/cmock", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/console", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/cxx", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/driver", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/efuse", "C:/Espressif/frameworks/esp-who/components/esp-code-scanner", "C:/Espressif/frameworks/esp-who/components/esp-dl", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp-tls", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_adc", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_app_format", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_coex", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_common", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_eth", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_event", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_gdbstub", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_hid", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_http_client", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_http_server", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_https_ota", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_https_server", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_hw_support", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_lcd", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_local_ctrl", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_mm", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_netif", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_netif_stack", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_partition", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_phy", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_pm", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_psram", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_ringbuf", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_rom", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_timer", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_wifi", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/espcoredump", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__button", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__cmake_utilities", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp-dsp", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp-sr", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp32-camera", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp32_s3_eye_noglib", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__mdns", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esptool_py", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/fatfs", "C:/Espressif/frameworks/esp-who/components/fb_gfx", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/hal", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/heap", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/http_parser", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/idf_test", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/ieee802154", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/json", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/log", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/lwip", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/main", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/mbedtls", "C:/Espressif/frameworks/esp-who/components/modules", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/mqtt", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/newlib", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/nvs_flash", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/openthread", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/partition_table", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/perfmon", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/protobuf-c", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/protocomm", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/pthread", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/sdmmc", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/soc", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/spi_flash", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/spiffs", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/tcp_transport", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/touch_element", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/ulp", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/unity", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/usb", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/wear_levelling", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/wifi_provisioning", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/wpa_supplicant", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/xtensa", "" ],
+    "build_components" : [ "app_trace", "app_update", "bootloader", "bootloader_support", "bt", "cmock", "console", "cxx", "driver", "efuse", "esp-code-scanner", "esp-dl", "esp-tls", "esp_adc", "esp_app_format", "esp_coex", "esp_common", "esp_eth", "esp_event", "esp_gdbstub", "esp_hid", "esp_http_client", "esp_http_server", "esp_https_ota", "esp_https_server", "esp_hw_support", "esp_lcd", "esp_local_ctrl", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_system", "esp_timer", "esp_wifi", "espcoredump", "espressif__button", "espressif__cmake_utilities", "espressif__esp-dsp", "espressif__esp-sr", "espressif__esp32-camera", "espressif__esp32_s3_eye_noglib", "espressif__esp_codec_dev", "espressif__esp_lcd_ili9341", "espressif__mdns", "esptool_py", "fatfs", "fb_gfx", "freertos", "hal", "heap", "http_parser", "idf_test", "ieee802154", "json", "log", "lwip", "main", "mbedtls", "modules", "mqtt", "newlib", "nvs_flash", "openthread", "partition_table", "perfmon", "protobuf-c", "protocomm", "pthread", "sdmmc", "soc", "spi_flash", "spiffs", "tcp_transport", "touch_element", "ulp", "unity", "usb", "vfs", "wear_levelling", "wifi_provisioning", "wpa_supplicant", "xtensa", "" ],
+    "build_component_paths" : [ "C:/Espressif/frameworks/esp-idf-v5.1.4/components/app_trace", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/app_update", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/bootloader", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/bootloader_support", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/bt", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/cmock", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/console", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/cxx", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/driver", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/efuse", "C:/Espressif/frameworks/esp-who/components/esp-code-scanner", "C:/Espressif/frameworks/esp-who/components/esp-dl", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp-tls", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_adc", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_app_format", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_coex", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_common", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_eth", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_event", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_gdbstub", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_hid", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_http_client", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_http_server", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_https_ota", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_https_server", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_hw_support", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_lcd", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_local_ctrl", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_mm", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_netif", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_netif_stack", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_partition", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_phy", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_pm", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_psram", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_ringbuf", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_rom", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_timer", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_wifi", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/espcoredump", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__button", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__cmake_utilities", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp-dsp", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp-sr", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp32-camera", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp32_s3_eye_noglib", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_lcd_ili9341", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__mdns", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/esptool_py", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/fatfs", "C:/Espressif/frameworks/esp-who/components/fb_gfx", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/hal", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/heap", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/http_parser", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/idf_test", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/ieee802154", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/json", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/log", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/lwip", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/main", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/mbedtls", "C:/Espressif/frameworks/esp-who/components/modules", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/mqtt", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/newlib", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/nvs_flash", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/openthread", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/partition_table", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/perfmon", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/protobuf-c", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/protocomm", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/pthread", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/sdmmc", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/soc", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/spi_flash", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/spiffs", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/tcp_transport", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/touch_element", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/ulp", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/unity", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/usb", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/wear_levelling", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/wifi_provisioning", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/wpa_supplicant", "C:/Espressif/frameworks/esp-idf-v5.1.4/components/xtensa", "" ],
     "build_component_info" : {
         "app_trace": {
             "alias": "idf::app_trace",
@@ -748,6 +748,21 @@
             "sources": [ "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/esp_codec_dev.c", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/esp_codec_dev_vol.c", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/esp_codec_dev_if.c", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/audio_codec_sw_vol.c", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/platform/audio_codec_gpio.c", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/platform/audio_codec_ctrl_i2c.c", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/platform/audio_codec_data_i2s.c", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/platform/audio_codec_ctrl_spi.c", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/platform/esp_codec_dev_os.c", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/device/es8311/es8311.c", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/device/es8156/es8156.c", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/device/es7243e/es7243e.c", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/device/es7210/es7210.c", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/device/es7243/es7243.c", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/device/es8388/es8388.c", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/device/tas5805m/tas5805m.c", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/device/es8374/es8374.c", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev/device/aw88298/aw88298.c" ],
             "include_dirs": [ "include", "interface", "device/include" ]
         },
+        "espressif__esp_lcd_ili9341": {
+            "alias": "idf::espressif__esp_lcd_ili9341",
+            "target": "___idf_espressif__esp_lcd_ili9341",
+            "prefix": "idf",
+            "dir": "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_lcd_ili9341",
+            "type": "LIBRARY",
+            "lib": "__idf_espressif__esp_lcd_ili9341",
+            "reqs": [ "esp_lcd" ],
+            "priv_reqs": [ "driver", "espressif__cmake_utilities" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [ "espressif__cmake_utilities" ],
+            "file": "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/build/esp-idf/espressif__esp_lcd_ili9341/libespressif__esp_lcd_ili9341.a",
+            "sources": [ "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_lcd_ili9341/esp_lcd_ili9341.c" ],
+            "include_dirs": [ "include" ]
+        },
         "espressif__mdns": {
             "alias": "idf::espressif__mdns",
             "target": "___idf_espressif__mdns",
@@ -951,11 +966,11 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "espressif__esp-sr" ],
+            "priv_reqs": [ "espressif__esp-sr", "espressif__esp_lcd_ili9341" ],
             "managed_reqs": [],
-            "managed_priv_reqs": [ "espressif__esp-sr" ],
+            "managed_priv_reqs": [ "espressif__esp-sr", "espressif__esp_lcd_ili9341" ],
             "file": "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/build/esp-idf/main/libmain.a",
-            "sources": [ "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/main/app_main.cpp", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/main/src/app_button.cpp", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/main/src/app_camera.cpp", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/main/src/app_face.cpp", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/main/src/app_lcd.cpp", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/main/src/app_led.cpp", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/main/src/app_motion.cpp", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/main/src/app_speech.cpp" ],
+            "sources": [ "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/main/app_main.cpp", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/main/src/app_button.cpp", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/main/src/app_camera.cpp", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/main/src/app_face.cpp", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/main/src/app_lcd.cpp", "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/main/src/app_motion.cpp" ],
             "include_dirs": [ "include", "." ]
         },
         "mbedtls": {
@@ -2254,9 +2269,9 @@
             "dir": "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/main",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "espressif__esp-sr" ],
+            "priv_reqs": [ "espressif__esp-sr", "espressif__esp_lcd_ili9341" ],
             "managed_reqs": [],
-            "managed_priv_reqs": [ "espressif__esp-sr" ],
+            "managed_priv_reqs": [ "espressif__esp-sr", "espressif__esp_lcd_ili9341" ],
             "include_dirs": [ "include", "." ]
         },
         "esp-code-scanner": {
@@ -2307,17 +2322,17 @@
             "managed_priv_reqs": [],
             "include_dirs": [ "ai", "camera", "lcd", "web" ]
         },
-        "espressif__esp_codec_dev": {
-            "alias": "idf::espressif__esp_codec_dev",
-            "target": "___idf_espressif__esp_codec_dev",
+        "espressif__button": {
+            "alias": "idf::espressif__button",
+            "target": "___idf_espressif__button",
             "prefix": "idf",
-            "dir": "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev",
-            "lib": "__idf_espressif__esp_codec_dev",
-            "reqs": [ "driver" ],
-            "priv_reqs": [ "freertos" ],
+            "dir": "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__button",
+            "lib": "__idf_espressif__button",
+            "reqs": [ "driver", "esp_adc" ],
+            "priv_reqs": [ "esp_timer", "espressif__cmake_utilities" ],
             "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "include_dirs": [ "include", "interface", "device/include" ]
+            "managed_priv_reqs": [ "espressif__cmake_utilities" ],
+            "include_dirs": [ "include" ]
         },
         "espressif__cmake_utilities": {
             "alias": "idf::espressif__cmake_utilities",
@@ -2331,41 +2346,17 @@
             "managed_priv_reqs": [],
             "include_dirs": []
         },
-        "espressif__mdns": {
-            "alias": "idf::espressif__mdns",
-            "target": "___idf_espressif__mdns",
+        "espressif__esp_codec_dev": {
+            "alias": "idf::espressif__esp_codec_dev",
+            "target": "___idf_espressif__esp_codec_dev",
             "prefix": "idf",
-            "dir": "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__mdns",
-            "lib": "__idf_espressif__mdns",
-            "reqs": [ "lwip", "console", "esp_netif" ],
-            "priv_reqs": [ "esp_timer", "esp_wifi" ],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
-        },
-        "espressif__button": {
-            "alias": "idf::espressif__button",
-            "target": "___idf_espressif__button",
-            "prefix": "idf",
-            "dir": "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__button",
-            "lib": "__idf_espressif__button",
-            "reqs": [ "driver", "esp_adc" ],
-            "priv_reqs": [ "esp_timer", "espressif__cmake_utilities" ],
-            "managed_reqs": [],
-            "managed_priv_reqs": [ "espressif__cmake_utilities" ],
-            "include_dirs": [ "include" ]
-        },
-        "espressif__esp32-camera": {
-            "alias": "idf::espressif__esp32-camera",
-            "target": "___idf_espressif__esp32-camera",
-            "prefix": "idf",
-            "dir": "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp32-camera",
-            "lib": "__idf_espressif__esp32-camera",
+            "dir": "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_codec_dev",
+            "lib": "__idf_espressif__esp_codec_dev",
             "reqs": [ "driver" ],
-            "priv_reqs": [ "freertos", "nvs_flash", "esp_timer" ],
+            "priv_reqs": [ "freertos" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "driver/include", "conversions/include" ]
+            "include_dirs": [ "include", "interface", "device/include" ]
         },
         "espressif__esp-dsp": {
             "alias": "idf::espressif__esp-dsp",
@@ -2391,6 +2382,18 @@
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
         },
+        "espressif__esp32-camera": {
+            "alias": "idf::espressif__esp32-camera",
+            "target": "___idf_espressif__esp32-camera",
+            "prefix": "idf",
+            "dir": "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp32-camera",
+            "lib": "__idf_espressif__esp32-camera",
+            "reqs": [ "driver" ],
+            "priv_reqs": [ "freertos", "nvs_flash", "esp_timer" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "driver/include", "conversions/include" ]
+        },
         "espressif__esp-sr": {
             "alias": "idf::espressif__esp-sr",
             "target": "___idf_espressif__esp-sr",
@@ -2402,6 +2405,30 @@
             "managed_reqs": [],
             "managed_priv_reqs": [ "espressif__esp-dsp" ],
             "include_dirs": [ "src/include", "esp-tts/esp_tts_chinese/include", "include/esp32s3" ]
+        },
+        "espressif__mdns": {
+            "alias": "idf::espressif__mdns",
+            "target": "___idf_espressif__mdns",
+            "prefix": "idf",
+            "dir": "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__mdns",
+            "lib": "__idf_espressif__mdns",
+            "reqs": [ "lwip", "console", "esp_netif" ],
+            "priv_reqs": [ "esp_timer", "esp_wifi" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "include" ]
+        },
+        "espressif__esp_lcd_ili9341": {
+            "alias": "idf::espressif__esp_lcd_ili9341",
+            "target": "___idf_espressif__esp_lcd_ili9341",
+            "prefix": "idf",
+            "dir": "C:/Espressif/frameworks/esp-who/examples/digital-camera-fw/managed_components/espressif__esp_lcd_ili9341",
+            "lib": "__idf_espressif__esp_lcd_ili9341",
+            "reqs": [ "esp_lcd" ],
+            "priv_reqs": [ "driver", "espressif__cmake_utilities" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [ "espressif__cmake_utilities" ],
+            "include_dirs": [ "include" ]
         }
     },
     "debug_prefix_map_gdbinit": ""

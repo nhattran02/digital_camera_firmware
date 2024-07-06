@@ -1,3 +1,4 @@
 ## IDF Component Manager Manifest File
 dependencies:
+  espressif/esp_lcd_ili9341: "^2.0.0"
   espressif/esp-sr: "~1.5.1"

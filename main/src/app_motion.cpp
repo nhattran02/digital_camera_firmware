@@ -1,19 +1,15 @@
 #include "app_motion.hpp"
-
 #include "esp_log.h"
 #include "esp_camera.h"
-
 #include "dl_image.hpp"
 
 static const char TAG[] = "App/Motion";
 
 AppMotion::AppMotion(AppButton *key,
-                     AppSpeech *speech,
                      QueueHandle_t queue_i,
                      QueueHandle_t queue_o,
                      void (*callback)(camera_fb_t *)) : Frame(queue_i, queue_o, callback),
                                                         key(key),
-                                                        speech(speech),
                                                         switch_on(false) {}
 
 void AppMotion::update()
@@ -23,15 +19,6 @@ void AppMotion::update()
         if (this->key->pressed == BUTTON_MENU)
         {
             this->switch_on = (this->key->menu == MENU_MOTION_DETECTION) ? true : false;
-            ESP_LOGD(TAG, "%s", this->switch_on ? "ON" : "OFF");
-        }
-    }
-
-    if (this->speech->command > COMMAND_NOT_DETECTED)
-    {
-        if (this->speech->command >= MENU_STOP_WORKING && this->speech->command <= MENU_MOTION_DETECTION)
-        {
-            this->switch_on = (this->speech->command == MENU_MOTION_DETECTION) ? true : false;
             ESP_LOGD(TAG, "%s", this->switch_on ? "ON" : "OFF");
         }
     }

@@ -1,21 +1,17 @@
 #include "app_lcd.hpp"
-
 #include <string.h>
-
 #include "esp_log.h"
 #include "esp_camera.h"
-
 #include "logo_en_240x240_lcd.h"
+#include "esp_lcd_ili9341.h"
 
 static const char TAG[] = "App/LCD";
 
 AppLCD::AppLCD(AppButton *key,
-               AppSpeech *speech,
                QueueHandle_t queue_i,
                QueueHandle_t queue_o,
                void (*callback)(camera_fb_t *)) : Frame(queue_i, queue_o, callback),
                                                   key(key),
-                                                  speech(speech),
                                                   panel_handle(NULL),
                                                   switch_on(false)
 {
@@ -52,17 +48,17 @@ AppLCD::AppLCD(AppButton *key,
             .rgb_endian = LCD_RGB_ENDIAN_RGB,
             .bits_per_pixel = 16,
         };
-        ESP_ERROR_CHECK(esp_lcd_new_panel_st7789(io_handle, &panel_config, &panel_handle));
+        ESP_ERROR_CHECK(esp_lcd_new_panel_ili9341(io_handle, &panel_config, &panel_handle));
         ESP_ERROR_CHECK(esp_lcd_panel_reset(panel_handle));
         ESP_ERROR_CHECK(esp_lcd_panel_init(panel_handle));
-        esp_lcd_panel_invert_color(panel_handle, true);// Set inversion for esp32s3eye
+        esp_lcd_panel_invert_color(panel_handle, true); // Set inversion 
 
         // turn on display
         esp_lcd_panel_disp_on_off(panel_handle, true);
 
         this->draw_color(0x000000);
         vTaskDelay(pdMS_TO_TICKS(500));
-        this->draw_wallpaper();
+        //this->draw_wallpaper();
         vTaskDelay(pdMS_TO_TICKS(1000));
     } while (0);
 }
@@ -116,15 +112,6 @@ void AppLCD::update()
         }
     }
 
-    if (this->speech->command > COMMAND_NOT_DETECTED)
-    {
-        if (this->speech->command >= MENU_STOP_WORKING && this->speech->command <= MENU_MOTION_DETECTION)
-        {
-            this->switch_on = (this->speech->command == MENU_STOP_WORKING) ? false : true;
-            ESP_LOGD(TAG, "%s", this->switch_on ? "ON" : "OFF");
-        }
-    }
-
     if (this->switch_on == false)
     {
         this->paper_drawn = false;
@@ -146,7 +133,7 @@ static void task(AppLCD *self)
             if (self->switch_on)
                 esp_lcd_panel_draw_bitmap(self->panel_handle, 0, 0, frame->width, frame->height, (uint16_t *)frame->buf);
             else if (self->paper_drawn == false)
-                self->draw_wallpaper();
+                self->draw_wallpaper(); // If it stopped working, let display wallpaper
 
             if (self->queue_o)
                 xQueueSend(self->queue_o, &frame, portMAX_DELAY);
